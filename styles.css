@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #6c212c;
+    border-bottom: 2px; 
+    padding: 20px 0; 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centralizar o contêiner */
+    padding: 0 20px; /* Espaçamento horizontal */
+}
+
+header .logo img {
+    height: 90px; /* Ajuste a altura da imagem do logo */
+	border-radius: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre itens do menu */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+	font-family: 'Varela Round'; 
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; /* Tamanho da fonte dos itens do menu */
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    transition: background-color 0.9s;
+	 border-radius: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #722125; 
+    color: #000;
+}
+
+/* Estilo da Seção Hero */
+.hero {
+    background-color: #fff;
+	font-family: 'Varela Round'; 
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #000;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+	color: #000;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border: 2px solid #000; /* Borda adicionada */
+}
+
+.hero .btn:hover {
+    background-color: #6c212c;
+    border-color: #6c212c; /* Cor da borda ao passar o mouse */
+	color: #fff;
+}
+
+/* Estilo da Seção Nova: Título, Subtítulo e Fotos */
+.gallery {
+    background-color: #f2f2c3; /* Cor de fundo da galeria */
+    padding: 60px 0;
+}
+
+.gallery .container {
+    text-align: center;
+	color: #000;
+	font-family: 'Varela Round'; 
+}
+.gallery p {
+    text-align: center;
+	color: #000;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    text-align: center;
+    position: relative; /* Para posicionar o efeito de hover */
+    overflow: hidden; /* Esconde parte da imagem durante o efeito de hover */
+}
+
+.gallery-item img {
+    border-radius: 100%; /* Bordas arredondadas da imagem por padrão */
+    border: 2px solid #000; /* Borda ao redor da imagem */
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    transition: border-radius 0.3s ease; /* Transição suave para a borda arredondada */
+}
+
+/* Opcional: Garantir que a imagem não ultrapasse o container */
+.gallery-item {
+    width: 200px;
+    height: 190px;
+}
+
+.gallery-item:hover img {
+    border-radius: 100%; /* Torna a imagem completamente redonda ao passar o mouse */
+}
+
+
+
+
+/* Estilo da Seção de Produtos Destaque */
+.products {
+    background-color: #6c212c; /* Verde menta para a seção de produtos */
+    padding: 60px 0;
+}
+
+.products .container {
+    text-align: center;
+	font-family: 'Varela Round'; 
+}
+
+.products h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+	color: white;
+}
+
+.products h3 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+	color: white;
+}
+
+.product-carousels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Espaçamento entre os carrosséis */
+}
+
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Ajuste conforme necessário */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+	width: 700px;
+    height: 90px;
+    min-width: 100%;
+}
+
+.carousel-image img {
+    width: 700px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px; /* Borda arredondada nas imagens */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo da Seção de Contato */
+.contact {
+    background-color: #fff; /* Branco para a seção de contato */
+    padding: 40px 0;
+}
+
+.contact .container {
+    max-width: 600px; /* Ajuste o tamanho conforme necessário */
+    margin: 0 auto;
+    padding: 0 20px;
+	font-family: 'Varela Round'; 
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os elementos do formulário */
+}
+
+.contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Borda arredondada */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura total */
+}
+
+.contact textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.contact button {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #6c212c;
+    border-color: #000; /* Cor da borda ao passar o mouse */
+	color: #fff;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #f2f2c3; /* Bege para o rodapé */
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+	font-family: 'Varela Round'; 
+}
+
+.footer-logo img {
+    height: 90px; /* Ajuste conforme necessário */
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.footer-info h3 {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon img {
+    height: 50px; /* Ajuste conforme necessário */
+    width: 50px; /* Ajuste conforme necessário */
+}

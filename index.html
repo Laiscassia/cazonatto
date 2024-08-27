@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/bolologo.png"/>
+    <title>Cazonatto Bolos</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nerko+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nerko+One&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/navicon.jpeg" alt="Cazzonato">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Bolos</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	<img src="img/boloheader.jpg" alt="Bolo" width= "100%">
+    <!-- Seção Hero -->
+    <section class="hero">
+        <div class="container">
+            <h2>Cazonatto</h2>
+            <p>Encontre os melhores doces e bolos</p>
+            <a href="bolos.html" class="btn">Veja Nossos Produtos</a>
+        </div>
+    </section>
+
+<!-- Nova Seção: Título, Subtítulo e Fotos -->
+<section class="gallery">
+    <div class="container">
+        <h2>Galeria de Criações</h2>
+        <h3>Temos tamanhos, opções de massas, recheios, coberturas e topos para você combinar</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-hover="img/tamanhohover.png">
+                <img src="img/tamanho.jpeg" alt="Tamanho">
+                <p>Tamanho</p>
+            </div>
+            <div class="gallery-item" data-hover="img/massahover.png">
+                <img src="img/massa.jpeg" alt="Massa">
+                <p>Massa</p>
+            </div>
+            <div class="gallery-item" data-hover="img/recheiohover.png">
+                <img src="img/recheio.jpeg" alt="Recheio">
+                <p>Recheio</p>
+            </div>
+            <div class="gallery-item" data-hover="img/coberturahover.png">
+                <img src="img/cobertura.jpeg" alt="Cobertura">
+                <p>Cobertura</p>
+            </div>
+            <div class="gallery-item" data-hover="img/topohover.png">
+                <img src="img/topo.jpeg" alt="Topo">
+                <p>Topo</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Seção de Produtos Destaque -->
+    <section class="products">
+        <div class="container">
+            <h2>Monte seu Bolo</h2>
+            <h3>Ilustrações</h3>
+            <div class="product-carousels">
+                <!-- Carrossel 1 -->
+                <div class="product-carousel">
+                    <button class="carousel-button prev" onclick="changeProductCarousel(-1, 0)">&#10094;</button>
+                    <div class="carousel-images" id="carousel-0">
+                        <img src="img/cobertura.png" alt="Produto 1" class="carousel-image">
+                        <img src="img/cobertura2.png" alt="Produto 2" class="carousel-image">
+                        <img src="img/cobertura3.png" alt="Produto 3" class="carousel-image">
+                    </div>
+                    <button class="carousel-button next" onclick="changeProductCarousel(1, 0)">&#10095;</button>
+                </div>
+                <!-- Carrossel 2 -->
+                <div class="product-carousel">
+                    <button class="carousel-button prev" onclick="changeProductCarousel(-1, 1)">&#10094;</button>
+                    <div class="carousel-images" id="carousel-1">
+                        <img src="img/basebolo.png" alt="Produto 7" class="carousel-image">
+                        <img src="img/basebolo2.png" alt="Produto 8" class="carousel-image">
+                        <img src="img/basebolo3.png" alt="Produto 9" class="carousel-image">
+                    </div>
+                    <button class="carousel-button next" onclick="changeProductCarousel(1, 1)">&#10095;</button>
+                </div>
+				 <div class="product-carousel">
+                    <button class="carousel-button prev" onclick="changeProductCarousel(-1, 2)">&#10094;</button>
+                    <div class="carousel-images" id="carousel-2">
+                        <img src="img/recheiomorango.png" alt="Produto 1" class="carousel-image">
+                        <img src="img/recheio2.png" alt="Produto 2" class="carousel-image">
+                        <img src="img/recheio3.png" alt="Produto 3" class="carousel-image">
+                    </div>
+                    <button class="carousel-button next" onclick="changeProductCarousel(1, 2)">&#10095;</button>
+                </div>
+                <!-- Carrossel 2 -->
+                <div class="product-carousel">
+                    <button class="carousel-button prev" onclick="changeProductCarousel(-1, 3)">&#10094;</button>
+                    <div class="carousel-images" id="carousel-3">
+                        <img src="img/basebolo.png" alt="Produto 7" class="carousel-image">
+                        <img src="img/basebolo2.png" alt="Produto 8" class="carousel-image">
+                        <img src="img/basebolo3.png" alt="Produto 9" class="carousel-image">
+                    </div>
+                    <button class="carousel-button next" onclick="changeProductCarousel(1, 3)">&#10095;</button>
+                </div>
+				
+                <!-- Adicione mais carrosséis conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="hhtps://formsubmit.co/jsouzacordeiro7@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo">
+                    <img src="img/navicon.jpeg" alt="Make a Cake">
+                </a>
+            </div>
+            <div class="footer-info">
+                <h2>Cazzonato</h2>
+                <h3>Vcazonatto@gmail.com</h3>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/cazonatto_bolosedoces?igsh=MWc0bjk2dWJnNm12Zw==" target="_blank" class="social-icon">
+                    <img src="img/instagramlogo.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/veronica.cazonatto?mibextid=ZbWKwL" target="_blank" class="social-icon">
+                    <img src="img/facebooklogo.png" alt="Facebook">
+                </a>
+				<a href="https://wa.me/5515996893429" target="_blank" class="social-icon">
+                    <img src="img/whatsapplogo.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Referência ao JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
